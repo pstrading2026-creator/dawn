@@ -1,4 +1,11 @@
 .collection-list__item .card__inner {
   border-radius: 50%;
   overflow: hidden;
+  aspect-ratio: 1 / 1;
+}
+
+.collection-list__item .card__inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
