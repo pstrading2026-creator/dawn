@@ -1,15 +1,19 @@
 /* Collection list circular images */
-.collection-list .card--card,
-.collection-list .card__inner {
+.collection-list__item .card--media {
   border-radius: 50%;
   overflow: hidden;
-  aspect-ratio: 1 / 1;
 }
 
-.collection-list .card__media {
+.collection-list__item .card__inner {
   border-radius: 50%;
+  overflow: hidden;
 }
 
-.collection-list .card__content {
+.collection-list__item .card__content {
   text-align: center;
+}
+
+.collection-list__item .card__inner img {
+  border-radius: 50%;
+  object-fit: cover;
 }
