@@ -156,18 +156,20 @@
         "column_7AzPCj": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
+            "image": "shopify://shop_images/WhatsAppImage2026-07-06at3.26.44PM_4c9e9e56-3e41-4e2a-a1b9-cc2cdb7542c2.jpg",
+            "title": "Elegance",
+            "text": "<p>Everyday</p>",
+            "link_label": "Shop Pret",
+            "link": "shopify://collections/frontpage"
           }
         },
         "column_LKGdBW": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
+            "image": "shopify://shop_images/WhatsAppImage2026-07-06at3.26.44PM_4c9e9e56-3e41-4e2a-a1b9-cc2cdb7542c2.jpg",
+            "title": "Premium Fabrics",
+            "text": "<p>Pure Comfort</p>",
+            "link_label": "Explore",
             "link": ""
           }
         }
@@ -179,7 +181,7 @@
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
-        "title": "Multicolumn",
+        "title": "",
         "heading_size": "h2",
         "image_width": "full",
         "image_ratio": "adapt",
