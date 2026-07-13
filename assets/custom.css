@@ -1,3 +1,7 @@
 .collection-list__item img {
   border-radius: 50% !important;
 }
+.section-template--featured-collection .title-wrapper,
+.section-template--featured-collection .collection__title {
+  text-align: center;
+}
