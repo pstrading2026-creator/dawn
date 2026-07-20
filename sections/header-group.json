@@ -77,10 +77,22 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
+    },
+    "custom_announcement_bar_BADwKg": {
+      "type": "custom-announcement-bar",
+      "name": "Custom Announcement Bar",
+      "settings": {
+        "announcement_text": "FREE SHIPPING ON ORDERS OVER PKR 3,000",
+        "bg_color": "#C98A93",
+        "text_color": "#FFFFFF",
+        "scroll_speed": 14,
+        "enable_scroll": true
+      }
     }
   },
   "order": [
     "announcement-bar",
-    "header"
+    "header",
+    "custom_announcement_bar_BADwKg"
   ]
 }
