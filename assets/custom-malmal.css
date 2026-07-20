@@ -1,0 +1,190 @@
+/* ============================================
+   MALMAL — Custom CSS for Dawn Theme
+   Paste this ENTIRE file into:
+   Online Store → Themes → Edit Code → Assets → New Asset
+   → name it "custom.css"
+   Then add this line inside theme.liquid, right before </head>:
+   {{ 'custom.css' | asset_url | stylesheet_tag }}
+   ============================================ */
+
+/* -------- 1. Fonts (Google Fonts: Playfair Display for headings) -------- */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap');
+
+:root {
+  --malmal-blush: #C98A93;
+  --malmal-blush-dark: #B9707B;
+  --malmal-cream: #FAF6F0;
+  --malmal-cream-dark: #F2E9DE;
+  --malmal-ink: #2B2420;
+  --malmal-gold-line: #C9A16A;
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Jost', 'Assistant', sans-serif;
+}
+
+body, p, span, a, li, input, button {
+  font-family: var(--font-body) !important;
+}
+
+/* -------- 2. Announcement Bar -------- */
+.announcement-bar,
+#shopify-section-announcement-bar {
+  background-color: var(--malmal-blush) !important;
+}
+.announcement-bar__message,
+.announcement-bar p {
+  color: #fff !important;
+  letter-spacing: 0.08em;
+  font-size: 12px !important;
+  text-transform: uppercase;
+}
+
+/* -------- 3. Header -------- */
+.header {
+  background-color: var(--malmal-cream) !important;
+  border-bottom: 1px solid var(--malmal-cream-dark);
+}
+.header__heading-logo,
+.header__heading-link {
+  font-family: var(--font-heading) !important;
+}
+.header__menu-item {
+  font-family: var(--font-body) !important;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--malmal-ink) !important;
+}
+.header__menu-item:hover {
+  color: var(--malmal-blush-dark) !important;
+}
+
+/* -------- 4. Hero / Slideshow -------- */
+.slideshow__slide h1,
+.banner__heading {
+  font-family: var(--font-heading) !important;
+  font-weight: 400 !important;
+  color: var(--malmal-ink) !important;
+  font-size: clamp(36px, 5vw, 64px) !important;
+  line-height: 1.15 !important;
+}
+.slideshow__text p,
+.banner__text p {
+  font-family: var(--font-body) !important;
+  color: #5c5148 !important;
+  font-size: 17px !important;
+}
+.button, .button--primary,
+.shopify-payment-button__button {
+  background-color: var(--malmal-ink) !important;
+  border-color: var(--malmal-ink) !important;
+  border-radius: 0 !important;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 12px !important;
+}
+.button--secondary {
+  border-color: var(--malmal-ink) !important;
+  color: var(--malmal-ink) !important;
+  border-radius: 0 !important;
+}
+
+/* -------- 5. Icon / Feature Row (Ultra Soft, Fast Delivery etc.) -------- */
+.icon-with-text__item,
+.multicolumn-card {
+  color: var(--malmal-ink) !important;
+}
+.multicolumn-card__info {
+  font-size: 12px !important;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* -------- 6. Collection Banner Grid (Lawn / Pret / Unstitched / Dupattas) -------- */
+.collage__item .card__heading,
+.collection-list__item h3 {
+  font-family: var(--font-heading) !important;
+  color: #fff !important;
+  font-size: 26px !important;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.card--overlay::after {
+  background: rgba(43, 36, 32, 0.15) !important;
+}
+
+/* -------- 7. Section Headings (New Arrivals etc.) -------- */
+.title, .collection__title, .section-header h2 {
+  font-family: var(--font-heading) !important;
+  font-weight: 400 !important;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--malmal-ink) !important;
+}
+.title::after,
+.section-header .title::after {
+  content: "❖";
+  display: block;
+  color: var(--malmal-gold-line);
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+/* -------- 8. Product Cards -------- */
+.card__content {
+  text-align: left;
+}
+.card__heading a {
+  font-family: var(--font-body) !important;
+  font-size: 14px !important;
+  color: var(--malmal-ink) !important;
+}
+.price {
+  color: var(--malmal-blush-dark) !important;
+  font-weight: 500 !important;
+}
+.card__badge .badge {
+  background-color: var(--malmal-blush) !important;
+  border-radius: 0 !important;
+}
+.card-wrapper .card {
+  border-radius: 0 !important;
+}
+.quick-add__submit,
+.card .quick-add {
+  border-radius: 0 !important;
+}
+
+/* -------- 9. Newsletter / Footer -------- */
+.newsletter, #shopify-section-newsletter,
+.footer {
+  background-color: var(--malmal-blush) !important;
+}
+.newsletter-form__field-wrapper input {
+  border-radius: 0 !important;
+}
+.newsletter-form__button {
+  background-color: var(--malmal-ink) !important;
+  border-radius: 0 !important;
+}
+.footer h2, .footer__heading {
+  font-family: var(--font-heading) !important;
+  color: #fff !important;
+}
+.footer-block__heading {
+  color: #fff !important;
+  text-transform: uppercase;
+  font-size: 12px !important;
+  letter-spacing: 0.08em;
+}
+.footer a {
+  color: #f6e9ec !important;
+  font-size: 13px !important;
+}
+.footer {
+  color: #fff !important;
+}
+
+/* -------- 10. General Buttons Square + Uppercase (matches MALMAL) -------- */
+input, select, textarea, .field__input {
+  border-radius: 0 !important;
+}
